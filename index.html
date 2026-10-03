@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kashif — Portfolio</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background: #0a0a0a;
+        color: #ffffff;
+        min-height: 100vh;
+      }
+      /* Navbar */
+      nav {
+        width: 100%;
+        padding: 25px 8%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #222;
+      }
+      .logo {
+        font-size: 22px;
+        font-weight: bold;
+      }
+      .logo span {
+        color: #8b5cf6;
+      }
+      nav ul {
+        display: flex;
+        gap: 30px;
+        list-style: none;
+      }
+      nav a {
+        color: #aaa;
+        text-decoration: none;
+        transition: 0.3s;
+      }
+      nav a:hover {
+        color: white;
+      }
+      /* Hero */
+      .hero {
+        min-height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 40px 20px;
+      }
+      .hero-content {
+        max-width: 800px;
+      }
+      .tag {
+        display: inline-block;
+        padding: 8px 16px;
+        border: 1px solid #333;
+        border-radius: 50px;
+        color: #aaa;
+        margin-bottom: 25px;
+        font-size: 14px;
+      }
+      h1 {
+        font-size: clamp(50px, 9vw, 100px);
+        line-height: 1;
+        margin-bottom: 25px;
+      }
+      h1 span {
+        background: linear-gradient(90deg, #8b5cf6, #ec4899);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .description {
+        color: #999;
+        font-size: 18px;
+        line-height: 1.7;
+        max-width: 600px;
+        margin: auto;
+      }
+      .buttons {
+        margin-top: 35px;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+      }
+      .btn {
+        padding: 14px 24px;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+      .primary {
+        background: white;
+        color: black;
+      }
+      .primary:hover {
+        transform: translateY(-3px);
+      }
+      .secondary {
+        border: 1px solid #333;
+        color: white;
+      }
+      .secondary:hover {
+        background: #1a1a1a;
+      }
+      /* About */
+      .about {
+        max-width: 900px;
+        margin: auto;
+        padding: 80px 20px;
+        text-align: center;
+      }
+      .about h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+      .about p {
+        color: #999;
+        line-height: 1.8;
+      }
+      footer {
+        text-align: center;
+        padding: 30px;
+        color: #555;
+        border-top: 1px solid #222;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <div class="logo">K<span>.</span></div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+      </ul>
+    </nav>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <div class="tag">Welcome to my portfolio</div>
+        <h1>I'm <span>Kashif</span>.</h1>
+        <p class="description">
+          Designer, developer and creative thinker. I love building beautiful
+          digital experiences and turning ideas into reality.
+        </p>
+        <div class="buttons">
+          <a href="projects.html" class="btn primary"> View Projects → </a>
+          <a href="#about" class="btn secondary"> About Me </a>
+        </div>
+      </div>
+    </section>
+    <!-- About Section -->
+    <section class="about" id="about">
+      <h2>About Me</h2>
+      <p>
+        I'm Kashif, a creative designer and developer passionate about UI/UX,
+        web development and creating modern digital experiences.
+      </p>
+    </section>
+    <footer>© 2026 Kashif. All rights reserved.</footer>
+  </body>
+</html>
